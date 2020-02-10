@@ -9,7 +9,6 @@ const API_KEY = 'f55a90e150347eb9731ecde7f000fc07';
 class App extends Component {
   state = {
     city: undefined,
-    country: undefined,
     temp: undefined,
     temp_max: undefined,
     temp_min: undefined,
@@ -36,10 +35,9 @@ class App extends Component {
     this.setState ({
       city: data.name,
       country: data.sys.country,
-      temp: data.main.temp,
-      temp_max: data.main.temp_max,
-      temp_min: data.main.temp_min,
-      humidity: data.main.humidity,
+      temp: Math.round(data.main.temp),
+      temp_max: Math.round(data.main.temp_max),
+      temp_min: Math.round(data.main.temp_min),
       description: data.weather[0].description,
       error: ''
     })
@@ -73,7 +71,6 @@ class App extends Component {
                   temperature={this.state.temp}
                   temp_max={this.state.temp_max}
                   temp_min={this.state.temp_min}
-                  humidity={this.state.humidity}
                   description={this.state.description}
                   error={this.state.error}
                   />

@@ -1,4 +1,8 @@
 import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import { rollIn } from 'react-animations';
+
+
 
 
 const Weather = props => {
@@ -12,24 +16,19 @@ const Weather = props => {
 
       {
         props.temperature && <p className='weather__key'>Temperature:
-        <span className='weather__value'> {props.temperature}</span>
+        <span className='weather__value'> {props.temperature} °F</span>
         </p>
       }
 
       {
         props.temp_max && <p className='weather__key'>Temperature High:
-        <span className='weather__value'> {props.temp_max}</span>
+        <span className='weather__value'> {props.temp_max} °F</span>
         </p>
       }
 
       {
         props.temp_min && <p className='weather__key'>Temperature Low:
-        <span className='weather__value'> {props.temp_min}</span>
-        </p>
-      }
-
-      {props.humidity && <p className='weather__key'>Humidity:
-        <span className='weather__value'> {props.humidity}</span>
+        <span className='weather__value'> {props.temp_min} °F</span>
         </p>
       }
 
