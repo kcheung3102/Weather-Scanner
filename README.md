@@ -1,5 +1,12 @@
 ## Weather Scanner 
-
-React and Bootstrap
-
 An app that tells you the temperature, weather conditions in the location you search up.
+
+## Built With
+
+React
+
+CSS3
+
+REST Api implementation 
+
+![Weather-Scanner-Project](https://user-images.githubusercontent.com/44646134/72392512-4d9dc600-36fe-11ea-9923-13bf8830dcdc.jpg)
