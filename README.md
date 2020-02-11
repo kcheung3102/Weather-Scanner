@@ -1,11 +1,13 @@
 ## Weather Scanner 
-An app that tells you the temperature, weather conditions in the location you search up.
+An application that lets you search the current weather based on city
 
 ## Built With
 
 React
 
 CSS3
+
+React-Animations plugin
 
 OpenWeatherKey API 
 
