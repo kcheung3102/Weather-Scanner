@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { fadeInDown, zoomIn } from 'react-animations';
 
 const FadeInDown =  styled.div`animation: 2s ${keyframes `${fadeInDown}`} `;
+
 const ZoomIn =  styled.div`animation: 2s ${keyframes `${zoomIn}`} `;
 
 
